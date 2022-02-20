@@ -10,10 +10,11 @@
   /* width: calc((100%-60px)/3); */
   width: 370px;
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.work .item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .item-name {
   /* position: absolute; */
   background-color: rgba(47, 48, 58, 0.8);

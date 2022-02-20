@@ -5,6 +5,9 @@
 .client-list {
   display: flex;
   justify-content: center;
+  & .client-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .client-item {
   display: flex;
@@ -21,25 +24,21 @@
   height: 100%;
   border: 1px solid #afb1b8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &:hover .client-icon,
+  &:focus .client-icon {
+    border-color: 4px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 .client-icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.client-icon:hover,
-.client-icon:focus {
-  fill: var(--accent-color);
-}
-
-.client-list .client-item:not(:last-child) {
-  margin-right: 30px;
-}
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--accent-color);
-}
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
-  border-color: 4px solid var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
