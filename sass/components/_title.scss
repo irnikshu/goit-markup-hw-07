@@ -8,7 +8,7 @@
   margin-top: 0;
   margin-bottom: 50px;
 }
-.features-list .title {
+.features-list__title {
   @include font(14px, 700, 16px);
   color: var(--title-text-color);
   // font-weight: 700;

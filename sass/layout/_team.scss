@@ -7,14 +7,14 @@
   display: flex;
   /* padding-top: 94px;
   padding-bottom: 94px; */
-  & .member {
+  & .team-list__member {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     margin-bottom: 10px;
   }
-  & .text {
+  & .team-list__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -24,7 +24,7 @@
   }
 }
 
-.team-list .item {
+.team-list__item {
   /* padding-top: 186px;
   padding-bottom: 94px; */
   width: 270px;
@@ -36,15 +36,15 @@
   }
 }
 
-.description {
+.team-list__description {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.member-social-list {
+.member-soc {
   display: flex;
   justify-content: center;
 }
-.member-social-link {
+.member-soc__link {
   width: 44px;
   height: 44px;
   /* background-color: red; */
@@ -59,11 +59,11 @@
   }
 }
 
-.member-social-icon {
+.member-soc__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .member-social-link:hover &,
-  .member-social-link:focus & {
+  .member-soc__link :hover &,
+  .member-soc__link :focus & {
     fill: #ffffff;
   }
 }
@@ -72,6 +72,6 @@
 .member-social-icon:focus {
   fill: #ffffff; */
 
-.member-social-item + .member-social-item {
+.member-soc__item + .member-soc__item {
   margin-left: 10px;
 }
